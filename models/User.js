@@ -62,13 +62,20 @@ User.init(
         len: [2],
       }
     },
-    gym: {
+    gym_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     availability: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    gym_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'gym',
+        key: 'id'
+      }
     }
   },
   {

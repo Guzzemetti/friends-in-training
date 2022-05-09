@@ -17,13 +17,13 @@ Gym.init(
       allowNull: false,
       unique: true,
     },
-    gym_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: 'user',
-            key: 'id'
-        }
-    }
+    // gym_id: {
+    //     type: DataTypes.INTEGER,
+    //     references: {
+    //         model: 'user',
+    //         key: 'id'
+    //     }
+    // }
   },
   {
     sequelize,
