@@ -16,7 +16,11 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    first_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    last_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -35,6 +39,37 @@ User.init(
         len: [8],
       },
     },
+    gender: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    fitness_level: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    city: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    state: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    age: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        len: [2],
+      }
+    },
+    gym: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    availability: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
   },
   {
     hooks: {

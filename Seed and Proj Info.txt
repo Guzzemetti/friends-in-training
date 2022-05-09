@@ -14,28 +14,30 @@ Availability (ie mornings, afternoons, evenings)
 
 USER INPUT
 
-Full Name
+First Name
+Last Name
+email address
 Gender
-Work out partner gender preference?
-Fitness Level (beginner, intermediate, etc…)
-Location (via ???)
-Age (by ranges)
-Fitness Goal (different set options)
+Fitness Level (beginner, intermediate, advanced)
+Location (via zip)
+Age (integer input for display only)
 Gym (select one to many)
-Availability (ie mornings, afternoons, evenings)
+Availability (mornings, afternoons, evenings)
 
 GYMS
 
-Planet Fitness
-24 hour fitness
-Anytime fitness
+24 Hour Fitness
+Anytime Fitness
 Crunch fitness
-Curves international
-Equinox fitness
-f 45 training
-gold's gym
-l.a fitness.
+Curves International
+Equinox Fitness
+Esporta Fitness
+F45 Training
+Gold's Gym
+LA Fitness
 Orangetheory Fitness
+Planet Fitness
+Pure Barre
 
 
 We will have user go through form/modal to give specific info, pick from options and location to find matching workout partners in our db. 
