@@ -17,7 +17,7 @@ Gym.init(
       allowNull: false,
       unique: true,
     },
-    // gym_id: {
+    // user_id: {
     //     type: DataTypes.INTEGER,
     //     references: {
     //         model: 'user',
