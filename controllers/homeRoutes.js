@@ -9,7 +9,7 @@ router.get('/', withAuth, async (req, res) => {
       order: [['name', 'ASC']],
     });
 
-    const users = userData.map((project) => project.get({ plain: true }));
+    const users = userData.map((user) => user.get({ plain: true }));
 
     res.render('homepage', {
       users,
@@ -19,6 +19,31 @@ router.get('/', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
+
+
+router.get('/profile', withAuth, async (req, res) => {
+  try {
+    // Find the logged in user based on the session ID
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ['password'] }
+      ,
+    });
+
+    const user = userData.get({ plain: true });
+
+    res.render('profile', {
+      ...user,
+      logged_in: true
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
+
 
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
