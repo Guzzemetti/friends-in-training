@@ -1,0 +1,46 @@
+Friends In Training (FIT)
+
+SEEDS
+
+Full Name
+Gender
+Fitness Level (beginner, intermediate, etc…)
+Location (via ???)
+Age (by ranges)
+Fitness Goal (different set options)
+Gym
+Availability (ie mornings, afternoons, evenings)
+
+
+USER INPUT
+
+Full Name
+Gender
+Work out partner gender preference?
+Fitness Level (beginner, intermediate, etc…)
+Location (via ???)
+Age (by ranges)
+Fitness Goal (different set options)
+Gym (select one to many)
+Availability (ie mornings, afternoons, evenings)
+
+GYMS
+
+Planet Fitness
+24 hour fitness
+Anytime fitness
+Crunch fitness
+Curves international
+Equinox fitness
+f 45 training
+gold's gym
+l.a fitness.
+Orangetheory Fitness
+
+
+We will have user go through form/modal to give specific info, pick from options and location to find matching workout partners in our db. 
+
+Places API will find and display matching gyms in the area inputted by user (likely via zip code)
+
+
+
