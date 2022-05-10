@@ -70,5 +70,65 @@
     "state": "Florida",
     "age": "42",
     "availability": "Evening"
+  },
+  {
+    "first_name": "Greg",
+    "last_name": "Silverstein",
+    "email": "greggg@yahoo.com",
+    "password": "22424",
+    "gender": "Male",
+    "fitness_level": "Advanced",
+    "city": "Lake Mary",
+    "state": "Florida",
+    "age": "25",
+    "availability": "Morning"
+  },
+  {
+    "first_name": "Lacey",
+    "last_name": "Brown",
+    "email": "lacey@aol.com",
+    "password": "password553",
+    "gender": "Female",
+    "fitness_level": "Beginner",
+    "city": "Orlando",
+    "state": "Florida",
+    "age": "27",
+    "availability": "Afternoon"
+  },
+  {
+    "first_name": "Frank",
+    "last_name": "Reynolds",
+    "email": "wolfcola@wolfcola.com",
+    "password": "frank123",
+    "gender": "Male",
+    "fitness_level": "Intermediate",
+    "city": "Wekiwa",
+    "state": "Florida",
+    "age": "55",
+    "availability": "Evening"
+  },
+  {
+    "first_name": "Wayne",
+    "last_name": "Wayons",
+    "email": "wwayons@verizone.net",
+    "password": "password",
+    "gender": "Male",
+    "fitness_level": "Beginner",
+    "city": "Maitland",
+    "state": "Florida",
+    "age": "47",
+    "availability": "Afternoon"
+  },
+  {
+    "first_name": "Heather",
+    "last_name": "Reynolds",
+    "email": "heatherr@gmail.com",
+    "password": "mynewpassword",
+    "gender": "Female",
+    "fitness_level": "Intermediate",
+    "city": "Casselberry",
+    "state": "Florida",
+    "age": "31",
+    "availability": "Evening"
   }
 ]
