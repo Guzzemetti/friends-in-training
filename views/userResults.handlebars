@@ -1,0 +1,23 @@
+<!-- Loop over each object in the users array from resultsRoutes.js to create a user card with the results -->
+
+{{#each users as |user| }}
+<div class="row mb-4 user">
+  <div class="col-md-5">
+    <h2>
+      {{user.first_name}} {{user.last_name}}
+    </h2>
+    <img src="https://doheny.org/wp-content/uploads/2019/03/placeholder-person.png">
+  </div>
+  <div class="col-md-7">
+    <p>City: {{user.city}}</p>
+    <p>State: {{user.state}}</p>
+    <p>Email: {{user.email}}</p>
+    <p>Gender: {{user.gender}}</p>
+    <p>Level: {{user.fitness_level}}</p>
+    <p>Availability: {{user.availability}}</p>
+  </div>
+</div>
+{{/each}}
+
+
+
