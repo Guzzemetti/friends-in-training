@@ -9,7 +9,6 @@
     "city": "Orlando",
     "state": "Florida",
     "age": "32",
-    "gym_name": "LA Fitness",
     "availability": "Morning"
   },
   {
@@ -22,7 +21,6 @@
     "city": "Longwood",
     "state": "Florida",
     "age": "22",
-    "gym_name": "24 Hour Fitness",
     "availability": "Afternoon"
   },
   {
@@ -30,12 +28,47 @@
     "last_name": "Smith",
     "email": "tammy@hotmail.com",
     "password": "password1234",
-    "gender": "Male",
+    "gender": "Female",
     "fitness_level": "Beginner",
     "city": "Altamonte",
     "state": "Florida",
     "age": "40",
-    "gym_name": "Orangetheory Fitness",
+    "availability": "Evening"
+  },
+  {
+    "first_name": "Erin",
+    "last_name": "Aarons",
+    "email": "erinaarons@gmail.com",
+    "password": "abcd1234",
+    "gender": "Female",
+    "fitness_level": "Intermediate",
+    "city": "Casselberry",
+    "state": "Florida",
+    "age": "30",
+    "availability": "Morning"
+  },
+  {
+    "first_name": "Don",
+    "last_name": "Fry",
+    "email": "donthedon@aol.com",
+    "password": "password1123",
+    "gender": "Male",
+    "fitness_level": "Beginner",
+    "city": "Maitland",
+    "state": "Florida",
+    "age": "45",
+    "availability": "Afternoon"
+  },
+  {
+    "first_name": "Debra",
+    "last_name": "Downing",
+    "email": "debbiedowner@protonmail.com",
+    "password": "password1234",
+    "gender": "Female",
+    "fitness_level": "Advanced",
+    "city": "Wekiwa",
+    "state": "Florida",
+    "age": "42",
     "availability": "Evening"
   }
 ]
