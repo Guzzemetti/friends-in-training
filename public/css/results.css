@@ -1,0 +1,12 @@
+:root{
+    --primary: #e60b47;
+    --secondary: #ea4f7a;
+  }
+  
+  .resultsinfo{
+    color: var(--primary);
+  };
+
+  .userinfo{
+    color: var(--secondary);
+  };
