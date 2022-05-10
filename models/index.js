@@ -1,11 +1,11 @@
 const User = require('./User');
 const Gym = require('./Gym');
 
-User.belongsTo(Gym, {
+Gym.hasMany(User, {
     foreignKey: 'gym_id',
 });
 
-Gym.hasMany(User, {
+User.belongsTo(Gym, {
     foreignKey: 'gym_id',
 });
 
