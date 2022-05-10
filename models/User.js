@@ -62,10 +62,6 @@ User.init(
         len: [2],
       }
     },
-    // gym_name: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    // },
     availability: {
       type: DataTypes.STRING,
       allowNull: false,
