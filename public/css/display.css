@@ -1,24 +1,32 @@
+html,
 body {
-width: 100vw;
-height: 100vh;
-margin: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  scroll-snap-type: y mandatory;
 }
 
 .container {
   width: 100%;
   height: 100%;
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  overflow: scroll;
+  scroll-snap-points-y: 300px;
 }
 
 
-section {
+.container section {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
+}
+
+.sticky {
+  position: fixed;
+  min-width: 100%;
 }
 
 
