@@ -6,6 +6,10 @@
   border: 0;
 }
 
+.modal-header {
+  background: linear-gradient(90deg, rgba(47,158,97,1) 0%, rgba(7,78,39,1) 100%);
+}
+
 .background-img {
     background-image: url(/images/login_bg.jpg);
     /* filter: brightness(.5); */
