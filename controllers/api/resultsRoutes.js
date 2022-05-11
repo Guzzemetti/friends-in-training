@@ -4,7 +4,9 @@ const { User } = require('../../models');
 
 router.get('/', async (req, res) => {
   try {
-
+    // might need to move the below into the userData const row
+    // (req.session.logged_in, {
+    //   attributes: { exclude: ['password'] } });
     const userData = await User.findAll();
     const users = userData.map((user) => user.get({ plain: true }));
     // Pass serialized data and session flag into template
@@ -30,6 +32,8 @@ router.get('/:id', async (req, res) => {
     res.status(500).json(err);
   }
 })
+
+
 
 
 
