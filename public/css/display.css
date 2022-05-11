@@ -1,3 +1,8 @@
+:root{
+    --primary: #2f9e61;
+    --secondary: #085028;
+  }
+
 html,
 body {
   width: 100vw;
@@ -36,7 +41,7 @@ body {
   position: absolute center;
   text-align: center;
   padding-left: 0%;
-  color: #000;
+  color: var(--primary);
   margin-top: 43px;
 }
 
@@ -44,14 +49,13 @@ body {
   font-size: 21px;
   text-align: center;
   margin-top: -20px;
-  color: #000;
+  color: var(--secondary);
 }
 
 .image {
   text-align: center;
   width: 200px;
   /* Containers dimensions */
-  
   height: 200px;
   -webkit-border-radius: 75%;
   -moz-border-radius: 75%;
