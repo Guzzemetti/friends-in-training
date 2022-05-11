@@ -21,16 +21,19 @@ router.get('/', async (req, res) => {
 // needs to link to a user/profile handlebar
 router.get('/:id', async (req, res) => {
   try {
+    // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.params.id, {
+      include: [{ all: true, nested: true }],
+      attributes: { exclude: ['password'] }
     });
-    if (!userData) {
-      res.status(404).json({ message: 'No user with that ID'})
-      return;
-    } res.status(200).json(userData);
+    const users = userData.get({ plain: true });
+    res.render('profile', {
+      users,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
-})
+});
 
 
 
