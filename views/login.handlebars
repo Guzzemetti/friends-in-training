@@ -1,40 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <title>Document</title>
-  <link rel="stylesheet" href="/css/landingstyle.css"/>
-</head>
-<body class="background-img">
-<!-- Navbar -->
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-row">
-  <a class="navbar-brand" href="#">F.I.T</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse d-flex flex-row justify-content-end" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Join</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Friends</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav> -->
-
 <!-- Main Body -->
-<section class="gradient-form background-img">
+<section class="gradient-form">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-xl-10">
@@ -93,97 +58,167 @@
 <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="text-white modal-header">
         <h5 class="modal-title" id="exampleModalLabel">F.I.T. Sign Up</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        
-        <div class="row g-3">
+        <!-- SIGNUP FORM -->
+        <form id="signup-form">
+        <div class="row mb-2">
 				<div class="col">
-					<label for="inputAddress2" class="form-label">First name</label>
-					<input type="text" class="form-control" aria-label="First name" />
+					<label for="first-name-input" class="form-label">First name</label>
+					<input type="text" id="first-name-input" class="form-control" aria-label="First name" />
 				</div>
 				<div class="col">
-					<label for="inputAddress2" class="form-label">Last name</label>
-					<input type="text" class="form-control" aria-label="Last name" />
+					<label for="last-name-input" class="form-label">Last name</label>
+					<input type="text" id="last-name-input" class="form-control" aria-label="Last name" />
 				</div>
 			</div>
-			<form class="row g-3">
-				<div class="col-md-6">
-					<label for="inputEmail4" class="form-label">Email</label>
-					<input type="email" class="form-control" id="inputEmail4" />
+        <div class="row mb-2">
+				<div class="col">
+					<label for="email-input" class="form-label">Email</label>
+					<input type="email" id="email-input" class="form-control" />
 				</div>
-				<div class="col-md-6">
-					<label for="inputPassword4" class="form-label">Password</label>
-					<input type="password" class="form-control" id="inputPassword4" />
+				<div class="col">
+					<label for="password-input" class="form-label">Password</label>
+					<input type="password" id="password-input" class="form-control" />
 				</div>
-
-				
-				<div class="col-md-6">
-					<label for="inputCity" class="form-label">City</label>
-					<input type="text" class="form-control" id="inputCity" />
+        </div>
+        <div class="row mb-2">
+				<div class="col">
+					<label for="city-input" class="form-label">City</label>
+					<input type="text" id="city-input" class="form-control" />
 				</div>
-				<div class="col-md-4">
-					<label for="inputState" class="form-label">State</label>
-					<select id="inputState" class="form-select">
+				<div class="col">
+					<label for="state-input" class="form-label">State</label>
+					<select id="state-input" class="form-select">
 						<option selected>Choose...</option>
-						<option>...</option>
+						<option value="AK">Alaska</option>
+			<option value="AL">Alabama</option>
+			<option value="AR">Arkansas</option>
+			<option value="AZ">Arizona</option>
+			<option value="CA">California</option>
+			<option value="CO">Colorado</option>
+			<option value="CT">Connecticut</option>
+			<option value="DC">District of Columbia</option>
+			<option value="DE">Delaware</option>
+			<option value="FL">Florida</option>
+			<option value="GA">Georgia</option>
+			<option value="HI">Hawaii</option>
+			<option value="IA">Iowa</option>
+			<option value="ID">Idaho</option>
+			<option value="IL">Illinois</option>
+			<option value="IN">Indiana</option>
+			<option value="KS">Kansas</option>
+			<option value="KY">Kentucky</option>
+			<option value="LA">Louisiana</option>
+			<option value="MA">Massachusetts</option>
+			<option value="MD">Maryland</option>
+			<option value="ME">Maine</option>
+			<option value="MI">Michigan</option>
+			<option value="MN">Minnesota</option>
+			<option value="MO">Missouri</option>
+			<option value="MS">Mississippi</option>
+			<option value="MT">Montana</option>
+			<option value="NC">North Carolina</option>
+			<option value="ND">North Dakota</option>
+			<option value="NE">Nebraska</option>
+			<option value="NH">New Hampshire</option>
+			<option value="NJ">New Jersey</option>
+			<option value="NM">New Mexico</option>
+			<option value="NV">Nevada</option>
+			<option value="NY">New York</option>
+			<option value="OH">Ohio</option>
+			<option value="OK">Oklahoma</option>
+			<option value="OR">Oregon</option>
+			<option value="PA">Pennsylvania</option>
+			<option value="PR">Puerto Rico</option>
+			<option value="RI">Rhode Island</option>
+			<option value="SC">South Carolina</option>
+			<option value="SD">South Dakota</option>
+			<option value="TN">Tennessee</option>
+			<option value="TX">Texas</option>
+			<option value="UT">Utah</option>
+			<option value="VA">Virginia</option>
+			<option value="VT">Vermont</option>
+			<option value="WA">Washington</option>
+			<option value="WI">Wisconsin</option>
+			<option value="WV">West Virginia</option>
+			<option value="WY">Wyoming</option>
 					</select>
 				</div>
-				
-			</form>
-			<div class="dropdown">
-				<button
-					class="btn btn-secondary dropdown-toggle"
-					type="button"
-					id="dropdownMenuButton1"
-					data-bs-toggle="dropdown"
-					aria-expanded="false"
-				>
-					Fitness Level
-				</button>
+        </div>
+        <div class="row mb-2">
+        <div class="col">
+            <label for="fitness-level-input" class="form-label">Fitness Level</label>
+					<select id="fitness-level-input" class="form-select">
+						<option selected>Select fitness level</option>
+						<option value="Beginner">Beginner</option>
+			<option value="Intermediate">Intermediate</option>
+			<option value="Advanced">Advanced</option>
+      </select>
+        </div>
+
+        <div class="col">
+            <label for="availability-input" class="form-label">Availability</label>
+					<select id="availability-input" class="form-select">
+						<option selected>Select workout time</option>
+						<option value="Morning">Morning</option>
+			<option value="Afternoon">Afternoon</option>
+			<option value="Evening">Evening</option>
+      </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+            <label for="gender-input" class="form-label">Gender</label>
+					<select id="gender-input" class="form-select">
+						<option selected>Select...</option>
+						<option value="Male">Male</option>
+			<option value="Female">Female</option>
+      </select>
+        </div>
+        
+        <div class="col">
+            <label for="gym-input" class="form-label">Gym</label>
+					<select id="gym-input" class="form-select">
+						<option selected>Select your gym</option>
+          	<option value="24 Hour Fitness">24 Hour Fitness</option>
+						<option value="Anytime Fitness">Anytime Fitness</option>
+						<option value="Crunch Fitness">Crunch Fitness</option>
+						<option value="Curves International">Curves International</option>
+						<option value="Equinox Fitness">Equinox Fitness</option>
+						<option value="Esporta Fitness">Esporta Fitness</option>
+						<option value="F45 Training">F45 Training</option>
+						<option value="Gold's Gym">Gold's Gym</option>
+          	<option value="LA Fitness">LA Fitness</option>
+          	<option value="Orangetheory Fitness">Orangetheory Fitness</option>
+          	<option value="Planet Fitness">Planet Fitness</option>
+          	<option value="Pure Barre">Pure Barre</option>
+      </select>
+        </div>
+      </div>
+
+			{{!-- <div class="pt-2 dropdown">
+				<button class="btn btn-success dropdown-toggle"	type="button"	id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Fitness Level</button>
 				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 					<li><a class="dropdown-item" href="#">Beginner</a></li>
 					<li><a class="dropdown-item" href="#">Intermediate</a></li>
 					<li><a class="dropdown-item" href="#">Advanced</a></li>
 				</ul>
-				<button
-					class="btn btn-secondary dropdown-toggle"
-					type="button"
-					id="dropdownMenuButton1"
-					data-bs-toggle="dropdown"
-					aria-expanded="false"
-				>
-					Availability
-				</button>
+				<button	class="btn btn-success dropdown-toggle"	type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Availability</button>
 				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 					<li><a class="dropdown-item" href="#">Morning</a></li>
 					<li><a class="dropdown-item" href="#">Afternoon</a></li>
 					<li><a class="dropdown-item" href="#">Evening</a></li>
 				</ul>
-				<button
-					class="btn btn-secondary dropdown-toggle"
-					type="button"
-					id="dropdownMenuButton1"
-					data-bs-toggle="dropdown"
-					aria-expanded="false"
-				>
-					Gender
-				</button>
+				<button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Gender</button>
 				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 					<li><a class="dropdown-item" href="#">Male</a></li>
 					<li><a class="dropdown-item" href="#">Female</a></li>
 				</ul>
-				<button
-					class="btn btn-secondary dropdown-toggle"
-					type="button"
-					id="dropdownMenuButton1"
-					data-bs-toggle="dropdown"
-					aria-expanded="false"
-				>
-					Preferred Gym
-				</button>
+				<button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Gym</button>
 				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 					<li><a class="dropdown-item" href="#">24 Hour Fitness</a></li>
 					<li><a class="dropdown-item" href="#">Anytime Fitness</a></li>
@@ -199,23 +234,14 @@
           <li><a class="dropdown-item" href="#">Pure Barre</a></li>
 				</ul>
 			</div>
-		</div>
+		</div> --}}
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-outline-danger">Save changes</button>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-outline-success">Submit</button>
+        </form>
       </div>
     </div>
   </div>
 </div>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-<script src="/css/js/login.js"></script>
-{{!-- <script src="/css/js/signup_modal.js"></script> --}}
-
-</body>
-</html>

@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
-//create a new user route COPIED ONLY NEEDS CHANGES
+// route to create new user
+// need to link this with sign up modal still
 router.post("/", async (req, res) => {
   // Creating a new instance of user
   try {
