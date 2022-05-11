@@ -9,6 +9,7 @@ router.get('/', async (req, res) => {
     const users = userData.map((user) => user.get({ plain: true }));
     // Pass serialized data and session flag into template
     res.render('userResults', { 
+      layout: 'main',
       users, 
       // logged_in: req.session.logged_in 
     });

@@ -1,3 +1,8 @@
+:root{
+    --primary: #2f9e51;
+    --secondary: #074e13;
+  }
+
 html,
 body {
   width: 100vw;
@@ -36,7 +41,7 @@ body {
   position: absolute center;
   text-align: center;
   padding-left: 0%;
-  color: #000;
+  color: var(--primary);
   margin-top: 43px;
 }
 
@@ -44,7 +49,7 @@ body {
   font-size: 21px;
   text-align: center;
   margin-top: -20px;
-  color: #000;
+  color: var(--secondary);
 }
 
 .image {

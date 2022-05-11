@@ -1,21 +1,21 @@
+<container class ="container">
 <!-- Loop over each object in the users array from resultsRoutes.js to create a user card with the results -->
-
 {{#each users as |user| }}
-<div class="row mb-4 user">
-  <div class="col-md-5">
-    <h2>
-      {{user.first_name}} {{user.last_name}}
-    </h2>
-    <img src="https://doheny.org/wp-content/uploads/2019/03/placeholder-person.png">
-  </div>
-  <div class="col-md-7">
-    <p class="resultsinfo">City: </p><p style="color:#1a5ba5;">{{user.city}}</p>
-    <p class="resultsinfo">State: </p><p style="color:#1a5ba5;">{{user.state}}</p>
-    <p class="resultsinfo">Email: </p><p style="color:#1a5ba5;">{{user.email}}</p>
-    <p class="resultsinfo">Gender: </p><p style="color:#1a5ba5;">{{user.gender}}</p>
-    <p class="resultsinfo">Level: </p><p style="color:#1a5ba5;">{{user.fitness_level}}</p>
-    <p class="resultsinfo">Availability: </p><p style="color:#1a5ba5;">{{user.availability}}</p>
-  </div>
-</div>
-{{/each}}
-
+<section
+      class="page-2 row align-items-center justify-content-around vh-100"
+    >
+      <!-- users display div -->
+      <div class="box">
+        <div id="overlay">
+          <div style="background-image: url('/images/anastase-maragos-DHsdSeCpjRU-unsplash.jpg');" class="image">
+            <div class="trick">
+    
+            </div>
+          </div>
+          <ul class="text">{{user.first_name}} {{user.last_name}}</ul>
+          <p class="text1">{{user.city}}</p>
+          <p class="text1">{{user.fitness_level}}</p>
+          <p class="text1">{{user.availability}}</p>
+    </section>
+    {{/each}}
+    </container>
