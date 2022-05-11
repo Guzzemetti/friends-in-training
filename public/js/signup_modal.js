@@ -1,89 +1,44 @@
-$(document).ready(function() {
-    prep_modal();
-  });
-  
-  function prep_modal()
-  {
-    $(".modal").each(function() {
-  
-    var element = this;
-      var pages = $(this).find('.modal-split');
-  
-    if (pages.length != 0)
-    {
-          pages.hide();
-          pages.eq(0).show();
-  
-          var b_button = document.createElement("button");
-                  b_button.setAttribute("type","button");
-                        b_button.setAttribute("class","btn btn-primary");
-                        b_button.setAttribute("style","display: none;");
-                        b_button.innerHTML = "Back";
-  
-          var n_button = document.createElement("button");
-                  n_button.setAttribute("type","button");
-                        n_button.setAttribute("class","btn btn-primary");
-                        n_button.innerHTML = "Next";
-  
-          $(this).find('.modal-footer').append(b_button).append(n_button);
-  
-  
-          var page_track = 0;
-  
-          $(n_button).click(function() {
-          
-          this.blur();
-  
-              if(page_track == 0)
-              {
-                  $(b_button).show();
-              }
-  
-              if(page_track == pages.length-2)
-              {
-                  $(n_button).text("Submit");
-              }
-  
-          if(page_track == pages.length-1)
-          {
-            $(element).find("form").submit();
-          }
-  
-              if(page_track < pages.length-1)
-              {
-                  page_track++;
-  
-                  pages.hide();
-                  pages.eq(page_track).show();
-              }
+const signupFormHandler = async function(event) {
+    event.preventDefault();
+    
+    const firstnameEl = document.querySelector('#first-name-input');
+    const lastnameEl = document.querySelector('#last-name-input');
+    const emailEl = document.querySelector('#email-input');
+    const passwordEl = document.querySelector('#password-input');
+    const cityEl = document.querySelector('#city-input');
+    const stateEl = document.querySelector('#state-input');
+    const fitnessEl = document.querySelector('#fitness-level-input');
+    const availabilityEl = document.querySelector('#availability-input');
+    const genderEl = document.querySelector('#gender-input');
+    const gymEl = document.querySelector('#gym-input');
+    
+    const response = await fetch('/api/users', {
+        method: 'POST',
+        body: JSON.stringify({
+            first_name: firstnameEl.value,
+            last_name: lastnameEl.value,
+            email: emailEl.value,
+            password: passwordEl.value,
+            city: cityEl.value,
+            state: stateEl.value,
+            fitness_level: fitnessEl.value,
+            availability: availabilityEl.value,
+            gender: genderEl.value,
+            gym_id: gymEl.value
+
+        }),
+        headers: { 'Content-Type': 'application/json' },
+});
+    
+      if (response.ok) {
+        document.location.replace('/');
+        alert('You are signed up and logged in. Remember your password, please.')
+      } else {
+        alert('Failed to sign up');
+      }
+    };
   
   
-          });
-  
-          $(b_button).click(function() {
-  
-              if(page_track == 1)
-              {
-                  $(b_button).hide();
-              }
-  
-              if(page_track == pages.length-1)
-              {
-                  $(n_button).text("Next");
-              }
-  
-              if(page_track > 0)
-              {
-                  page_track--;
-  
-                  pages.hide();
-                  pages.eq(page_track).show();
-              }
-  
-  
-          });
-  
-    }
-  
-    });
-  }
+  document
+    .querySelector('#signup-form')
+    .addEventListener('submit', signupFormHandler);
