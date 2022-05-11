@@ -463,11 +463,8 @@ body {
 .button {
   font-family: 'Montserrat';
   font-size: 14px;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   font-weight: 900;
-  line-height: 20px;
-  min-width: 200px;
-  padding: 20px 40px;
   color: #444;
   text-align: center;
   text-transform: uppercase;
@@ -487,14 +484,16 @@ body {
   color: #bbb;
   border: 1px solid #bbb;
 }
-.footer {
-  min-height: 240px;
-  border-top: 1px solid #d6d6d6;
-  background-color: #fff;
-  padding: 30px 40px;
-  text-align: center;
-  overflow: hidden;
+
+/* .friends-button {
+  margin-top: 20px;
+  margin-right: 500px;
 }
+
+.edit-profile-button {
+  margin-right: 50px;
+} */
+
 @media screen and (max-width: 1300px) {
   .container {
     max-width: 843px;
