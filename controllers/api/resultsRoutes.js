@@ -1,10 +1,9 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
-
+// route to display all users in database at api/results
 router.get('/', async (req, res) => {
   try {
-
     const userData = await User.findAll();
     const users = userData.map((user) => user.get({ plain: true }));
     // Pass serialized data and session flag into template
@@ -18,6 +17,8 @@ router.get('/', async (req, res) => {
   }
 });
 
+// route to get a user in the database by their ID
+// needs to link to a user/profile handlebar
 router.get('/:id', async (req, res) => {
   try {
     const userData = await User.findByPk(req.params.id, {
