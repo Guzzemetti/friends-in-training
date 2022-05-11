@@ -1,8 +1,9 @@
 <container class ="container">
 <!-- Loop over each object in the users array from resultsRoutes.js to create a user card with the results -->
-
+{{#with users as |user| }}
 <section
       class="page-2 row align-items-center justify-content-around vh-100"
+      id="profile"
     >
       <!-- users display div -->
       <div class="box">
@@ -18,4 +19,5 @@
           <p class="text1">{{user.fitness_level}}</p>
           <p class="text1">{{user.availability}}</p>
     </section>
+      {{/with}}
 </container>
