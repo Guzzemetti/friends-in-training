@@ -1,6 +1,6 @@
 :root{
-    --primary: #2f9e51;
-    --secondary: #074e13;
+    --primary: #2f9e61;
+    --secondary: #085028;
   }
 
 html,
@@ -56,7 +56,6 @@ body {
   text-align: center;
   width: 200px;
   /* Containers dimensions */
-  
   height: 200px;
   -webkit-border-radius: 75%;
   -moz-border-radius: 75%;
