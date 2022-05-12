@@ -10,6 +10,9 @@ body {
   margin: 0;
   scroll-snap-type: y mandatory;
   background-color: #f4f4f4;
+  background-image: url(/images/seamless-dumbbell-pattern.jpg);
+  background-repeat: repeat;
+  background-attachment: scroll;
 
 }
 
@@ -36,7 +39,14 @@ body {
   min-width: 100%;
 }
 
-
+.box {
+  background-color: rgb(255, 255, 255);
+  width: 15%;
+  opacity: 90%;
+  border-radius: 10px;
+  border: solid black 1.5px;
+  font-family: 'Times New Roman', Times, serif;
+}
 
 .text {
   font-size: 40px;
@@ -221,3 +231,8 @@ a.nav-link {
   padding: 10px;
   text-align: center;
 }
+/* .background-img {
+  background-image: url(/images/seamless-dumbbell-pattern.jpg);
+  background-repeat: repeat;
+  background-attachment: scroll;
+} */
