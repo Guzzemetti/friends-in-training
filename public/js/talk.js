@@ -2,6 +2,12 @@ const req = require('express/lib/request');
 const { Model, DataTypes } = require('sequelize');
 const router = require('express').Router();
 
+const userlist = [ 
+  {
+    id: user_id
+  }
+]
+
 
 
 Talk.ready.then(function () {
