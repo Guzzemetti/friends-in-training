@@ -17,8 +17,8 @@ body {
 }
 
 .container {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   scroll-snap-type: y mandatory;
   overflow: scroll;
   scroll-snap-points-y: 300px;
