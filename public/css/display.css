@@ -131,9 +131,9 @@ a.nav-link {
 
 
 .rela-block {
-  display: block;
+  /* display: block; */
   position: relative;
-  margin: auto;
+  /* margin: auto; */
   top: ;
   left: ;
   right: ;
@@ -163,12 +163,13 @@ a.nav-link {
   transition: 0.2s cubic-bezier(0.5, 0, 0.2, 1);
 }
   .profile-container {
-    z-index: 1;
+    /* z-index: 1; */
+    display: block;
     width: 92%;
     max-width: 1126px;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     margin: 70px auto;
-    padding: 70px 0;
+    padding: 100px 0;
   }
 .profile-card {
   width: calc(100% - 40px);
