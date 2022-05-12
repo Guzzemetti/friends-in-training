@@ -106,3 +106,22 @@ body {
 #box:hover #overlay {
   opacity: 1;
 }
+
+.navbar-inverse .navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  text-decoration: none;
+}
+.navbar-brand img {
+  height: 100%;
+  margin-left: 20px;
+}
+
+a.navbar-brand {
+  text-decoration: none;
+}
+
+a.nav-link {
+  text-decoration: none;
+}

@@ -11,21 +11,15 @@
 			crossorigin="anonymous"
 		/>
 		<title>Document</title>
-		<link rel="stylesheet" href="/css/display.css" />
+		<link rel="stylesheet" href="../../public/css/display.css" />
 	</head>
 	<body>
 		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-row sticky">
-			<a class="navbar-brand" href="#">F.I.T</a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarNav"
-				aria-controls="navbarNav"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-row sticky py-4">
+			<a class="navbar-brand" href="#"><img class="img-responsive" width="80px" height="" src="../../public/images/FITlogo.png">
+				<a class="navbar-brand" href="#">Friends In Training</a>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div
@@ -35,14 +29,16 @@
 				<ul class="navbar-nav">
 					<li class="nav-item active"></li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Join</a>
+						<a class="nav-link" href="#">Profile</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Friends</a>
+						<a class="nav-link" href="#">Matches</a>
 					</li>
+					{{#if logged_in}}
 					<li class="nav-item">
-						<a class="nav-link disabled" href="#">Disabled</a>
+						<a class="nav-link" id="logout" href="#">Logout</a>
 					</li>
+					{{/if}}
 				</ul>
 			</div>
 		</nav>
@@ -95,3 +91,4 @@
 		</container>
 	</body>
 </html>
+<script src="/js/logout.js"></script>
