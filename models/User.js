@@ -49,9 +49,6 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    age: {
-      type: DataTypes.INTEGER,
-    },
     availability: {
       type: DataTypes.STRING,
       allowNull: false,

@@ -8,7 +8,6 @@
     "fitness_level": "Intermediate",
     "city": "Orlando",
     "state": "Florida",
-    "age": "32",
     "availability": "Morning"
   },
   {
@@ -20,7 +19,6 @@
     "fitness_level": "Beginner",
     "city": "Longwood",
     "state": "Florida",
-    "age": "22",
     "availability": "Afternoon"
   },
   {
@@ -32,7 +30,6 @@
     "fitness_level": "Beginner",
     "city": "Altamonte",
     "state": "Florida",
-    "age": "40",
     "availability": "Evening"
   },
   {
@@ -44,7 +41,6 @@
     "fitness_level": "Intermediate",
     "city": "Casselberry",
     "state": "Florida",
-    "age": "30",
     "availability": "Morning"
   },
   {
@@ -56,7 +52,6 @@
     "fitness_level": "Beginner",
     "city": "Maitland",
     "state": "Florida",
-    "age": "45",
     "availability": "Afternoon"
   },
   {
@@ -68,7 +63,6 @@
     "fitness_level": "Advanced",
     "city": "Wekiwa",
     "state": "Florida",
-    "age": "42",
     "availability": "Evening"
   },
   {
@@ -80,7 +74,6 @@
     "fitness_level": "Advanced",
     "city": "Lake Mary",
     "state": "Florida",
-    "age": "25",
     "availability": "Morning"
   },
   {
@@ -92,7 +85,6 @@
     "fitness_level": "Beginner",
     "city": "Orlando",
     "state": "Florida",
-    "age": "27",
     "availability": "Afternoon"
   },
   {
@@ -104,7 +96,6 @@
     "fitness_level": "Intermediate",
     "city": "Wekiwa",
     "state": "Florida",
-    "age": "55",
     "availability": "Evening"
   },
   {
@@ -116,7 +107,6 @@
     "fitness_level": "Beginner",
     "city": "Maitland",
     "state": "Florida",
-    "age": "47",
     "availability": "Afternoon"
   },
   {
@@ -128,7 +118,6 @@
     "fitness_level": "Intermediate",
     "city": "Casselberry",
     "state": "Florida",
-    "age": "31",
     "availability": "Evening"
   }
 ]
