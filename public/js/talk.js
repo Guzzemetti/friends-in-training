@@ -1,12 +1,15 @@
+const req = require('express/lib/request');
+const { Model, DataTypes } = require('sequelize');
+const router = require('express').Router();
 
 
 
 Talk.ready.then(function () {
   var me = new Talk.User({
-    id: '123456',
-    name: 'Alice',
-    email: 'alice@example.com',
-    photoUrl: 'https://demo.talkjs.com/img/alice.jpg',
+    id: req.session.user_id,
+    name: req.session.first_name,
+    email: req.session.email,
+    photoUrl: '',
   });
   window.talkSession = new Talk.Session({
     appId: 'tX0AMVh4',
@@ -16,7 +19,7 @@ Talk.ready.then(function () {
     id: '654321',
     name: 'Sebastian',
     email: 'Sebastian@example.com',
-    photoUrl: 'https://demo.talkjs.com/img/sebastian.jpg',
+    photoUrl: '',
   });
 
   var conversation = talkSession.getOrCreateConversation(
