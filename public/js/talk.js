@@ -1,10 +1,54 @@
-const req = require('express/lib/request');
-const { Model, DataTypes } = require('sequelize');
-const router = require('express').Router();
+var e = document.getElementById("friends-input");
+
+var submitButton = document.getElementById("submit-button");
+
+addEventListener("click", submitButton);
+
+var userId = e.value;
+
+var userName = e.options[e.selectedIndex].text;  
+
 
 const userlist = [ 
   {
-    id: user_id
+    id: 1,
+    name: "Johnny Gree",
+  },
+  {
+    id: 2,
+    name: "Sandra Brown",
+  },
+  {
+    id: 3,
+    name: "Sophia Karnes",
+  },
+  {
+    id: 4,
+    name: "Sal Bologna",
+  },
+  {
+    id: 5,
+    name: "Rad Thad",
+  },
+  {
+    id: 6,
+    name: "Amanda Bynes",
+  },
+  {
+    id: 7,
+    name: "Lawrence Culver",
+  },
+  {
+    id: 8,
+    name: "Michelle Greene",
+  },
+  {
+    id: 9,
+    name: "Joey Tirado",
+  },
+  {
+    id: 10,
+    name: "Jeff Little",
   }
 ]
 
@@ -12,20 +56,16 @@ const userlist = [
 
 Talk.ready.then(function () {
   var me = new Talk.User({
-    id: req.session.user_id,
-    name: req.session.first_name,
-    email: req.session.email,
-    photoUrl: '',
+    id: 4,
+    name: "Sal Bologna",
   });
   window.talkSession = new Talk.Session({
     appId: 'tX0AMVh4',
     me: me,
   });
   var other = new Talk.User({
-    id: '654321',
-    name: 'Sebastian',
-    email: 'Sebastian@example.com',
-    photoUrl: '',
+    id: userId,
+    name: userName,
   });
 
   var conversation = talkSession.getOrCreateConversation(
