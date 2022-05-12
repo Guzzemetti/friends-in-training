@@ -1,10 +1,10 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
-router.get('/:id', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
       // Find the logged in user based on the session ID
-      const userData = await User.findByPk(req.params.id, {
+      const userData = await User.findByPk(req.session.user_id, {
         include: [{ all: true, nested: true }],
         // attributes: { exclude: ['password'] }
       });

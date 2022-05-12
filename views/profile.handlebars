@@ -1,6 +1,34 @@
 <container class ="container">
 <!-- Loop over each object in the users array from resultsRoutes.js to create a user card with the results -->
 {{#with users as |user| }}
+<div class="rela-block profile-container">
+			<div class="rela-block profile-card">
+        <container class="button-container d-flex justify-content-around">
+          <button class="button friends-button">Friends</button>
+          <button class="button edit-profile-button">Edit Profile</button>
+        </container>
+				<div class="profile-pic" style="background-image: url('/images/anastase-maragos-DHsdSeCpjRU-unsplash.jpg');" class="profile-image" id="profile_pic"></div>
+				<div class="rela-block profile-name-container">
+					<div class="rela-block user-name" id="user_name">{{user.first_name}} {{user.last_name}}</div>
+					<div class="rela-block user-desc" id="user_description">
+						<ul class="profile-list">
+              <li>{{user.city}}</li>
+              <li>{{user.gender}}</li>
+              <li>{{user.fitness_level}}</li>
+              <li>Gym</li>
+              <li>{{user.availability}}</li>
+            </ul>
+					</div>
+				</div>
+					</div>
+				</div>
+			</div>
+		</div>
+{{/with}}
+
+{{!-- <container class ="container">
+<!-- Loop over each object in the users array from resultsRoutes.js to create a user card with the results -->
+{{#with users as |user| }}
 <section
       class="page-2 row align-items-center justify-content-around vh-100"
       id="profile"
@@ -19,5 +47,5 @@
           <p class="text1">{{user.fitness_level}}</p>
           <p class="text1">{{user.availability}}</p>
     </section>
-      {{/with}}
+      {{/with}} --}}
 </container>

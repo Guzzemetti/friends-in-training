@@ -1,7 +1,7 @@
-* {
+/* * {
   box-sizing: border-box;
   -webkit-transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
-  transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
+  transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease; */
 }
 .rela-block {
   display: block;
