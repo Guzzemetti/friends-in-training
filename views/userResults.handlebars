@@ -7,18 +7,16 @@
       <!-- users display div -->
       <div class="box">
         <div id="overlay">
-          <a href="/api/profile/">
-            <div style="background-image: url('/images/anastase-maragos-DHsdSeCpjRU-unsplash.jpg');" class="image">
-            {{!-- Trick is the hover for the picture --}}
-              <div class="trick">
-              </div>
+          <div style="background-image: url('/images/anastase-maragos-DHsdSeCpjRU-unsplash.jpg');" class="image">
+            <div class="trick">
+    
             </div>
-          </a>
+          </div>
           <ul class="text">{{user.first_name}} {{user.last_name}}</ul>
           <p class="text1">{{user.city}}</p>
           <p class="text1">{{user.gender}}</p>
           <p class="text1">{{user.fitness_level}}</p>
-          <p class="text1">{{gym.name}}</p>
+          <p class="text1">Gym Name</p>
           <p class="text1">{{user.availability}}</p>
     </section>
     {{/each}}
