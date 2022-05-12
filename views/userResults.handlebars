@@ -7,11 +7,13 @@
       <!-- users display div -->
       <div class="box">
         <div id="overlay">
-          <div style="background-image: url('/images/anastase-maragos-DHsdSeCpjRU-unsplash.jpg');" class="image">
-            <div class="trick">
-    
+          <a href="/api/profile/">
+            <div style="background-image: url('/images/anastase-maragos-DHsdSeCpjRU-unsplash.jpg');" class="image">
+            {{!-- Trick is the hover for the picture --}}
+              <div class="trick">
+              </div>
             </div>
-          </div>
+          </a>
           <ul class="text">{{user.first_name}} {{user.last_name}}</ul>
           <p class="text1">{{user.city}}</p>
           <p class="text1">{{user.gender}}</p>
