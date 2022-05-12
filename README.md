@@ -30,7 +30,7 @@ Austin Donovan: austinldonovan@gmail.com --- [Github](https://github.com/AustinL
 
 Jahnathan Exantus: jahnathanexantus@gmail.com --- [GitHub](https://github.com/jahnathanexantus)
 
-John Guzzetta: johnguzzettaiv@gmail.com --- [GitHub](#https://github.com/Guzzemetti/)
+John Guzzetta: johnguzzettaiv@gmail.com --- [GitHub](https://github.com/Guzzemetti/)
 
 John Hysong: johnahysong@gmail.com --- [Github](https://github.com/johnatticus)
 
