@@ -4,9 +4,9 @@ var submitButton = document.getElementById("submit-button");
 
 addEventListener("click", submitButton);
 
-var userId = e.value;
+// var userId = e.value;
 
-var userName = e.options[e.selectedIndex].text;  
+// var userName = e.options[e.selectedIndex].text;  
 
 
 const userlist = [ 
@@ -56,7 +56,7 @@ const userlist = [
 
 Talk.ready.then(function () {
   var me = new Talk.User({
-    id: 4,
+    id: "4",
     name: "Sal Bologna",
   });
   window.talkSession = new Talk.Session({
@@ -64,8 +64,9 @@ Talk.ready.then(function () {
     me: me,
   });
   var other = new Talk.User({
-    id: userId,
-    name: userName,
+    id: "2",
+    name: "Sandra Brown",
+    welcomeMessage: "Hey, do you work out at Gold's Gym?",
   });
 
   var conversation = talkSession.getOrCreateConversation(
