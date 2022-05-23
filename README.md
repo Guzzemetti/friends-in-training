@@ -39,6 +39,7 @@ John Hysong: johnahysong@gmail.com --- [Github](https://github.com/johnatticus)
 
 `https://github.com/Guzzemetti/friends-in-training`
 
+[Live Link](https://afternoon-island-74965.herokuapp.com/login)
 ---
 
 ## Example
